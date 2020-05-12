@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Nom-Nom HUNGRY</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="container-fluid text-center bg-info">
+        <h1>Money $<span id="money">20</span></h1>
+    </header>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center mb-3">
+                <img src="vending.png" alt="vending machine">
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary" onclick="app.gameController.cost('soda')">Soda</button>
+                    <button class="btn btn-primary"
+                        onclick="app.gameController.cost('butterfinger')">ButterFinger</button>
+                    <button class="btn btn-primary" onclick="app.gameController.cost('snickers')">Snickers</button>
+                    <button class="btn btn-primary" onclick="app.gameController.cost('doritos')">Doritos</button>
+                    <button class="btn btn-primary" onclick="app.gameController.cost('apple')">Apple</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid text-center bg-info" style="height: auto;">
+        <button class="btn btn-danger" onclick="app.gameController.reset()">Reset</button>
+    </footer>
+    <script src="./app/main.js" type="module"></script>
+</body>
+
+
+
+
+
+</html>
