@@ -17,11 +17,20 @@
     </header>
     <main class="container-fluid">
         <div class="row">
-            <div class="col-12 text-center mb-3">
-                <img src="vending.png" alt="vending machine">
+            <div class="col-12 d-flex justify-content-around">
+                <p>Apples Qty: <span id="apples"></span></p>
+                <p>Doritos Qty:<span id="doritos"></span></p>
+                <p>Snickers Qty:<span id="snickers"></span></p>
+                <p>Butterfinder Qty:<span id="butterfinger"></span></p>
+                <p>Soda Qty:<span id="soda"></span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="vending.png" style="height: 500px; width: 300px;" alt="vending machine">
             </div>
 
-            <div class="row">
+            <div class="row ml-5 pl-5">
                 <div class="col-12 text-center">
                     <button class="btn btn-primary" onclick="app.gameController.cost('soda')">Soda</button>
                     <button class="btn btn-primary"
